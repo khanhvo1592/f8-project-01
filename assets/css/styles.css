@@ -1,0 +1,437 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: #0f1b4c;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+/* common */
+.btn {
+    display: inline-block;
+    min-width: 98px;
+    border-radius: 12px;
+    background: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 18px 16px;
+}
+
+a {
+    text-decoration: none;
+}
+.content {
+    width: 1110px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ========== Header ============== */
+.header {
+    position: relative;
+    background: #e6f0ff;
+    height: 100vh;
+}
+/* Navigation */
+.navbar {
+    display: flex;
+    align-items: center;
+    padding-top: 38px;
+}
+.navbar ul {
+    display: flex;
+    margin-left: 50px;
+}
+.navbar .action {
+    margin-left: auto;
+}
+.navbar ul a {
+    color: #4f5361;
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 8px 14px;
+}
+.navbar .action-link {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.navbar .action-btn {
+    padding: 13px 16px;
+    border-radius: 8px;
+    margin-left: 18px;
+}
+/* Hero */
+.hero {
+    margin-top: 130px;
+    display: flex;
+}
+.hero .info {
+    width: 51%;
+}
+
+.hero .sub-title {
+    color: #687691;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    letter-spacing: 0.01em;
+}
+.hero .title {
+    min-width: 559px;
+    margin-top: 8px;
+    margin-bottom: 30px;
+    color: #000336;
+    font-size: 6.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 118.75%;
+}
+.hero .dest {
+    margin-top: 30px;
+    color: #5a6473;
+    font-family: Poppins;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 178%; /* 177.778% */
+}
+/* button call to action style */
+.hero-cta {
+    margin-top: 40px;
+    min-width: 170px;
+}
+.hero-img {
+    position: absolute;
+    bottom: 0px;
+    right: calc((100vw - 1110px) / 2 - 100px);
+}
+.client .row {
+    margin-top: 79px;
+    display: flex;
+    justify-content: space-between;
+}
+.client .desc {
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.25; /* 125% */
+}
+.client .row-desc {
+    margin-top: 23px;
+}
+.client .client-img {
+    margin-top: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* =============== Guild =============== */
+.guild {
+    margin-top: 200px;
+}
+.guild .sub-title {
+    position: relative;
+    /* width: 459px; */
+    margin: auto;
+    max-width: 100%;
+    color: #000339;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+.guild .sub-title::before {
+    position: absolute;
+    text-align: center;
+    top: -10px;
+    left: 50%;
+    content: "";
+    margin: 0 auto;
+    transform: translateX(-50%);
+    display: inline-block;
+    width: 41px;
+    height: 4px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: #000339;
+}
+.guild .desc {
+    margin-top: 20px;
+    color: #5a6473;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.87; /* 187.5% */
+}
+.list-guild {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+.guild-item {
+    margin: 0px 70px;
+    text-align: center;
+}
+.guild-item .title {
+    margin-top: 26px;
+    color: #3b3c45;
+    font-family: Poppins;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.1; /* 110% */
+}
+.guild-item .link {
+    margin-top: 10px;
+    display: inline-block;
+    color: #0689ff;
+    font-family: Poppins;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.guild-item .arrow {
+    margin-left: 5px;
+}
+
+.guild-cta {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.guild-cta .btn {
+    min-width: 170px;
+}
+
+/* =============== Feature ============= */
+
+.featured {
+    padding: 110px 0;
+    background: #f5fafe;
+    margin-top: 79px;
+}
+.featured .sub-title {
+    color: #000339;
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+.featured .row {
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-between;
+    color: #5a6473;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.88; /* 187.5% */
+}
+.featured .row .desc {
+    color: #5a6473;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.87; /* 187.5% */
+}
+.featured .link {
+    display: flex;
+    align-items: center;
+    color: #0689ff;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.featured .link .arrow {
+    margin-left: 6px;
+}
+
+.featured .list {
+    display: flex;
+    margin-top: 70px;
+    gap: 30px;
+}
+.featured .item {
+    flex: 1;
+    background: #fff;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.featured .item .thumb {
+    width: 100%;
+    height: 227px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.featured .item .body {
+    padding: 17px 20px 24px;
+}
+.featured .item .title {
+    color: #000339;
+    font-size: 2rem;
+}
+.featured .item .desc {
+    margin-top: 11px;
+    color: #a3a6ab;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+}
+.featured .item .info {
+    margin-top: 21px;
+    display: flex;
+    align-items: center;
+}
+.featured .item .icon {
+    margin-left: 23px;
+}
+.featured .item .icon:first-child {
+    margin-left: 0px;
+}
+.featured .item .label {
+    margin-left: 8px;
+    color: #4d4d52;
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+}
+/* ===============  Stats   ===================== */
+.stats {
+    margin-top: 75px;
+    padding-top: 50px 0;
+}
+.stats .content {
+    width: 1048px;
+}
+.stats .content .row {
+    display: flex;
+}
+.stats .img-block,
+.stats .info {
+    width: 50%;
+}
+.stats .info {
+    padding: 79px 0 0 165px;
+}
+.stats .img-block {
+    position: relative;
+}
+.stats-trend {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 239px;
+    border-radius: 0px 0px 12px 12px;
+    padding: 45px 22px 40px;
+    background-color: #ffffff;
+}
+.stats-trend .value {
+    color: #000339;
+    font-size: 2.6rem;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.001em;
+}
+.stats .separate {
+    margin-top: 25px;
+    height: 1.2px;
+    background: #d0d0d0;
+}
+.stats .avatar-block {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 26px;
+    gap: 16px 14px;
+}
+.stats .avatar-group {
+    display: flex;
+}
+.stats .avatar {
+    width: 16px;
+    height: 16px;
+    margin-left: -3px;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: var(--bg-color, #fff);
+    text-align: center;
+    font-size: 0.7rem;
+    font-style: normal;
+    font-weight: 450;
+    line-height: 16px;
+    letter-spacing: -0.145px;
+}
+.stats .avatar:first-child {
+    margin-left: 0px;
+}
+.stats-trend .icon {
+    margin-left: auto;
+}
+.stats-trend .desc {
+    margin-top: 8px;
+    color: #a7a7a7;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5; /* 150% */
+}
+.stats .img-block .image {
+    display: block;
+    width: 400px;
+    height: 460px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-left: auto;
+}
+.stats .sub-title::before {
+    position: absolute;
+    left: 0;
+    top: -10px;
+    content: "";
+    display: block;
+    width: 41px;
+    height: 4px;
+    border-radius: 12px;
+    background: #000339;
+}
+.stats .sub-title {
+    position: relative;
+    width: 269px;
+    color: #000339;
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 1.28;
+}
+.stats .info .desc {
+    width: 309px;
+    margin-top: 20px;
+    color: #5a6473;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.87; /* 187.5% */
+}
+.stats .row-qty {
+    display: flex;
+    margin-top: 110px;
+    justify-content: space-between;
+    padding: 0 32px;
+}
+.stats .qty {
+    color: #000;
+    font-size: 6.4rem;
+    font-weight: 600;
+}
+.stats .qty-desc {
+    margin-top: 22px;
+    color: #7b8087;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
