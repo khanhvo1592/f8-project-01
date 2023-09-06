@@ -539,8 +539,8 @@ footer .column {
     line-height: 1.75; /* 175% */
 }
 
-.footer .social-link {
-    margin-right: 10px;
+.footer .social-link + .social-link {
+    margin-left: 16px;
 }
 .footer .social-link:hover img {
     transform: scale(1.05); /* Increase size when hover */
