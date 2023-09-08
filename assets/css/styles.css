@@ -34,18 +34,27 @@ a {
     margin-left: auto;
     margin-right: auto;
 }
-
+.fix-header {
+    background: #e6f0ff;
+    padding-top: 26px;
+    position: sticky;
+    top: -26px;
+    z-index: 1;
+}
 /* ========== Header ============== */
-.header {
+.hero-wrap {
     position: relative;
     background: #e6f0ff;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 /* Navigation */
 .navbar {
     display: flex;
     align-items: center;
-    padding-top: 38px;
+    /* padding-top: 38px; */
+    padding: 12px 0;
 }
 .navbar ul {
     display: flex;
