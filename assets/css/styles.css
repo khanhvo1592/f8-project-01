@@ -52,6 +52,7 @@ a {
     height: calc(100vh - 90px);
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 /* Navigation */
 .navbar {
@@ -85,7 +86,7 @@ a {
 }
 /* Hero */
 .hero {
-    margin-top: 130px;
+    /* margin-top: ? 130px; */
     display: flex;
 }
 .hero .info {
