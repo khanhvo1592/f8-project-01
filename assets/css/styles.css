@@ -84,23 +84,20 @@ a {
     border-radius: 8px;
     margin-left: 18px;
 }
-/* Hero */
-.hero {
-    /* margin-top: ? 130px; */
-    display: flex;
-}
-.hero .info {
+/* hero-wrap */
+
+.hero-wrap .info {
     width: 51%;
 }
 
-.hero .sub-title {
+.hero-wrap .sub-title {
     color: #687691;
     font-size: 1.8rem;
     font-weight: 500;
     line-height: 1.5rem;
     letter-spacing: 0.01em;
 }
-.hero .title {
+.hero-wrap .title {
     min-width: 559px;
     margin-top: 8px;
     margin-bottom: 30px;
@@ -110,7 +107,7 @@ a {
     font-weight: 700;
     line-height: 118.75%;
 }
-.hero .dest {
+.hero-wrap .dest {
     margin-top: 30px;
     color: #5a6473;
     font-family: Poppins;
@@ -119,11 +116,11 @@ a {
     line-height: 178%; /* 177.778% */
 }
 /* button call to action style */
-.hero-cta {
+.hero-wrap-cta {
     margin-top: 40px;
     min-width: 170px;
 }
-.hero-img {
+.hero-wrap .hero-img {
     position: absolute;
     bottom: 0px;
     right: calc((100vw - 1110px) / 2 - 100px);
